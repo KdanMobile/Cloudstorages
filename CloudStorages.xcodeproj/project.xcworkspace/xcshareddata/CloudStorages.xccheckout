@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>92D45216-D13B-4E96-85F8-912C34D2E082</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CloudStorages</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5781DE97-AD1A-4A85-B384-C97EB993749F</key>
+		<string>ssh://github.com/KdanGit/Cloudstorages.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CloudStorages.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5781DE97-AD1A-4A85-B384-C97EB993749F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/KdanGit/Cloudstorages.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5781DE97-AD1A-4A85-B384-C97EB993749F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5781DE97-AD1A-4A85-B384-C97EB993749F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cloudstorages</string>
+		</dict>
+	</array>
+</dict>
+</plist>
