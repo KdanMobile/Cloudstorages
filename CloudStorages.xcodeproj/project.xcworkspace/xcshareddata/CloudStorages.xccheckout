@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>92D45216-D13B-4E96-85F8-912C34D2E082</string>
+	<string>CE18CD1D-41EE-498A-8A36-37C5FC87EB76</string>
 	<key>IDESourceControlProjectName</key>
 	<string>CloudStorages</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5781DE97-AD1A-4A85-B384-C97EB993749F</key>
-		<string>ssh://github.com/KdanGit/Cloudstorages.git</string>
+		<key>704202F7-33A9-4AC1-BEBA-B76733EB3DD9</key>
+		<string>ssh://github.com/KdanMobile/Cloudstorages.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CloudStorages.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5781DE97-AD1A-4A85-B384-C97EB993749F</key>
+		<key>704202F7-33A9-4AC1-BEBA-B76733EB3DD9</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/KdanGit/Cloudstorages.git</string>
+	<string>ssh://github.com/KdanMobile/Cloudstorages.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5781DE97-AD1A-4A85-B384-C97EB993749F</string>
+	<string>704202F7-33A9-4AC1-BEBA-B76733EB3DD9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5781DE97-AD1A-4A85-B384-C97EB993749F</string>
+			<string>704202F7-33A9-4AC1-BEBA-B76733EB3DD9</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Cloudstorages</string>
 		</dict>
