@@ -18,16 +18,16 @@ typedef enum{
 
 @interface CloudFile : NSObject
 {
-    NSString                *fileName;//File name
-    id                      fileObject;//File object
-    CSCloudServerType       serverType;//Cloud types
-    BOOL                    canOnline;//Enable Online Editing?
-    
+    NSString                *fileName;
+    id                      fileObject;
+    CSCloudServerType       serverType;
+    BOOL                    canOnline;
+  
 }
 
-@property (nonatomic, copy) NSString * fileName;
-@property (nonatomic,retain) id fileObject;
-@property (nonatomic) BOOL canOnline;
-@property (nonatomic) CSCloudServerType  serverType;
-@property (nonatomic) CSCloudFileState fileState;
+@property (nonatomic, copy) NSString * fileName;//File name
+@property (nonatomic,retain) id fileObject;//File object
+@property (nonatomic) BOOL canOnline;//Enable Online Editing
+@property (nonatomic) CSCloudServerType  serverType;//Cloud types
+@property (nonatomic) CSCloudFileState fileState;//FileState
 @end

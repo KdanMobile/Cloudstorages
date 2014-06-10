@@ -16,7 +16,7 @@
 #define CSSugarSyncName             @"SugarSync"
 #define CSFtpName                   @"FTP"
 #define CSEvernoteName              @"Evernote"
-#define CSSkyDriveName              @"SkyDrive"
+#define CSOneDriveName              @"OneDrive"
 
 typedef enum {
     CSNone = 0,
@@ -29,14 +29,24 @@ typedef enum {
     CSGoogleDocs = 1 << 6,
     CSSugarSync = 1 << 7,
     CSBox = 1 << 8,
-    CSskyDrive = 1 <<9,
+    CSOneDriver = 1 <<9,
     CSAll = 0xffff
 }CSCloudServerType;
 
+#define CSskyDrive  CSOneDriver
+#define CSSkyDriveName  CSOneDriveName
+
+//error domain
+#define kCSCloudErrorDomain     @"kCSCloudErrorDomain"
+typedef enum CSCloudErorCode
+{
+    CSCloudErrorUserCancel  =   0          //cancel
+}CSCloudErrorCode;
 
 #import <Foundation/Foundation.h>
 #import "CSCloudServerConfigurator.h"
 #import "CSDownloadTask.h"
+#import "UploadTask.h"
 @class CloudFile;
 @class CSPermission;
 @protocol CSCloudServerDelegate;
@@ -62,22 +72,30 @@ typedef enum {
     NSString                        *_hostName;//Host name( FTP webDav )
     NSString                        *_portID;//Port ( FTP )
     NSString                        *_description;//Description
+    NSStringEncoding                _encoding;//Encoding ( FTP )
+    BOOL                            _couldModifyLoginInfo;//could modify log in information
+    NSString                        *_loginIdentify;
+    
+    NSMutableArray                  *_uploadTaskList;
 }
 
 @property (nonatomic, assign) id<CSCloudServerDelegate> delegate;
-@property (nonatomic, copy) NSString *fileExtension;
-@property (nonatomic, copy) NSArray *fileExtensions;
-@property (nonatomic, copy) NSString * serverName;
-@property (nonatomic, assign) BOOL isWebLogin;
+@property (nonatomic, copy) NSString *fileExtension;//An extension of single file type
+@property (nonatomic, copy) NSArray *fileExtensions;//An extension array of file types
+@property (nonatomic, copy) NSString * serverName;//The display name of target cloud
+@property (nonatomic, assign) BOOL isWebLogin;//Used to verifiy login methods.
 @property (nonatomic, assign) BOOL isLogin;
-@property (nonatomic, assign) BOOL isAutoUpload;
+@property (nonatomic, assign) BOOL isAutoUpload;//auto upload or not
 @property (nonatomic, assign) CSCloudServerType serverType;
-@property (nonatomic, copy) NSString *userName;
-@property (nonatomic, copy) NSString *password;
-@property (nonatomic, copy) NSString *hostName;
-@property (nonatomic, copy) NSString *portID;
-@property (nonatomic, assign) BOOL    hasDownloadProgress;
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *userName;//Username
+@property (nonatomic, copy) NSString *password;//User password
+@property (nonatomic, copy) NSString *hostName;//Host name( FTP webDav )
+@property (nonatomic, copy) NSString *portID;//Port ( FTP )
+@property (nonatomic, assign) BOOL    hasDownloadProgress;//Is there a download process bar
+@property (nonatomic, copy) NSString *description;//Description
+@property (nonatomic, assign) NSStringEncoding encoding;//Encoding (FTP)
+@property (nonatomic, assign)BOOL   couldModifyLoginInfo;//could modify log in information
+@property (nonatomic, copy)NSString   *loginIdentify;//specific Identify
 /**
  Setting configuration files
  */
@@ -199,7 +217,7 @@ typedef enum {
  Check administrators who have file permission
  @param file Files to check your permission
  @see Successful -(void)getFilePermissionListSuccessful:(CSCloudServer *)server withList:(NSArray *)listName;
-      Failed     -(void)getFilePermissionListFailed:(CSCloudServer *)server withError:(NSError *)error;
+ Failed     -(void)getFilePermissionListFailed:(CSCloudServer *)server withError:(NSError *)error;
  */
 - (void)getPermissionList:(CloudFile *)file;
 /**
@@ -207,7 +225,7 @@ typedef enum {
  @param file Files to operate
  @param permission Administrators with permission to be removed
  @see Successful -(void)deletePermissionSuccessful:(CSCloudServer *)server withFile:(CloudFile *)file;
-      Failed     -(void)deletePermissionFailed:(CSCloudServer *)server withFile:(CloudFile *)file withError:(NSError *)error;
+ Failed     -(void)deletePermissionFailed:(CSCloudServer *)server withFile:(CloudFile *)file withError:(NSError *)error;
  */
 - (void)deletePermission:(CloudFile *)file atPermissionID:(CSPermission *)permission;
 /**
@@ -216,7 +234,7 @@ typedef enum {
  @param role Role（reader,writer)
  @param file Files added permission
  @see  Successful -(void)insertPermissionSuccessful:(CSCloudServer *)server withFile:(CloudFile *)file;
-       Failed      -(void)insertPermissionFailed:(CSCloudServer *)server withFile:(CloudFile *)file withError:(NSError *)error;
+ Failed      -(void)insertPermissionFailed:(CSCloudServer *)server withFile:(CloudFile *)file withError:(NSError *)error;
  */
 - (void)insertPermission:(NSString*)userName wihtRole:(NSString*)role toFile:(CloudFile *)file;
 /**
@@ -256,6 +274,9 @@ typedef enum {
  */
 - (void)serverUploadFileSuccess:(CSCloudServer *)server;
 - (void)serverUploadFaile:(CSCloudServer *)server withError:(NSError *)error;
+
+- (void)server:(CSCloudServer *)server uploadFile:(NSString *)localFilePath toCloudPath:(CloudFile *)cloudPath success:(BOOL)success withError:(NSError *)error;
+
 /**
  File download callback function.
  If successful, return server information;
@@ -263,6 +284,10 @@ typedef enum {
  */
 - (void)serverDownloadSuccess:(CSCloudServer *)server;
 - (void)serverDownloadFaile:(CSCloudServer *)server withError:(NSError *)error;
+/**
+ Only support Evernote and FTP
+ */
+- (void)server:(CSCloudServer *)server downloadFile:(NSString *)fileName toPath:(NSString *)toPath  success:(BOOL)success;
 
 /**
  File deletion callback function.

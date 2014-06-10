@@ -15,8 +15,8 @@
 - (void)buildURLEncodedPostBody;
 - (void)appendPostString:(NSString *)string;
 
-@property (retain) NSMutableArray *postData;
-@property (retain) NSMutableArray *fileData;
+@property (atomic, retain) NSMutableArray *postData;
+@property (atomic, retain) NSMutableArray *fileData;
 
 #if DEBUG_FORM_DATA_REQUEST
 - (void)addToDebugBody:(NSString *)string;
@@ -213,19 +213,6 @@
 #endif
 }
 
-- (BOOL)isHeaderContainsContentType
-{
-    BOOL headerContainsContentType = NO;
-    for (id key in self.requestHeaders.allKeys)
-    {
-        if ([key isKindOfClass:[NSString class]] && [key isEqualToString:@"Content-Type"])
-        {
-            headerContainsContentType = YES;
-            break;
-        }
-    }
-    return headerContainsContentType;
-}
 
 - (void)buildMultipartFormDataPostBody
 {
@@ -241,11 +228,8 @@
 	CFRelease(uuid);
 	NSString *stringBoundary = [NSString stringWithFormat:@"0xKhTmLbOuNdArY-%@",uuidString];
 	
-    if (![self isHeaderContainsContentType])
-    {
-        [self addRequestHeader:@"Content-Type" value:[NSString stringWithFormat:@"multipart/form-data; charset=%@; boundary=%@", charset, stringBoundary]];
-    }
-
+	[self addRequestHeader:@"Content-Type" value:[NSString stringWithFormat:@"multipart/form-data; charset=%@; boundary=%@", charset, stringBoundary]];
+	
 	[self appendPostString:[NSString stringWithFormat:@"--%@\r\n",stringBoundary]];
 	
 	// Adds post data
@@ -304,10 +288,7 @@
 	
 	NSString *charset = (NSString *)CFStringConvertEncodingToIANACharSetName(CFStringConvertNSStringEncodingToEncoding([self stringEncoding]));
 
-    if (![self isHeaderContainsContentType])
-    {
-        [self addRequestHeader:@"Content-Type" value:[NSString stringWithFormat:@"application/x-www-form-urlencoded; charset=%@",charset]];
-    }
+	[self addRequestHeader:@"Content-Type" value:[NSString stringWithFormat:@"application/x-www-form-urlencoded; charset=%@",charset]];
 
 	
 	NSUInteger i=0;

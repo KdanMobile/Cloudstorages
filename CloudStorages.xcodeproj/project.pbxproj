@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BB04398917A61E1B00E7E3E4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB04398817A61E1B00E7E3E4 /* CFNetwork.framework */; };
 		BB09B42B17AF8B0F00E08786 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB09B42A17AF8B0E00E08786 /* libz.dylib */; };
-		BB0D92ED18434E3700F7506A /* CloudSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0D92EC18434E3700F7506A /* CloudSDK.framework */; };
 		BB143A4D1795098D0059C868 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB143A4C1795098D0059C868 /* MobileCoreServices.framework */; };
 		BB143A4F179509920059C868 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB143A4E179509920059C868 /* QuartzCore.framework */; };
 		BB143A51179509A40059C868 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB143A50179509A30059C868 /* Security.framework */; };
@@ -24,6 +23,7 @@
 		BB2F1DFE180D0AC800A894AD /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2F1DF3180D0AC800A894AD /* TaskCell.m */; };
 		BB2F1DFF180D0AC800A894AD /* UpAndDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2F1DF5180D0AC800A894AD /* UpAndDownloadViewController.m */; };
 		BB2F1E00180D0AC800A894AD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2F1DF7180D0AC800A894AD /* WebViewController.m */; };
+		BB97A6E81946B39C00C40BB7 /* CloudSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB97A6E71946B39C00C40BB7 /* CloudSDK.framework */; };
 		BB9AC661179D3C9300F260F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9AC660179D3C9300F260F9 /* SystemConfiguration.framework */; };
 		BBB70FFA17E3435C00A287D0 /* CloudIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BBB70FF817E3435C00A287D0 /* CloudIcons.bundle */; };
 		BBB70FFB17E3435C00A287D0 /* FilesIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BBB70FF917E3435C00A287D0 /* FilesIcons.bundle */; };
@@ -70,7 +70,6 @@
 /* Begin PBXFileReference section */
 		BB04398817A61E1B00E7E3E4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		BB09B42A17AF8B0E00E08786 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		BB0D92EC18434E3700F7506A /* CloudSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudSDK.framework; sourceTree = "<group>"; };
 		BB143A4C1795098D0059C868 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		BB143A4E179509920059C868 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BB143A50179509A30059C868 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -94,6 +93,7 @@
 		BB2F1DF5180D0AC800A894AD /* UpAndDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpAndDownloadViewController.m; sourceTree = "<group>"; };
 		BB2F1DF6180D0AC800A894AD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		BB2F1DF7180D0AC800A894AD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		BB97A6E71946B39C00C40BB7 /* CloudSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudSDK.framework; sourceTree = "<group>"; };
 		BB9AC660179D3C9300F260F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BBB70FF817E3435C00A287D0 /* CloudIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CloudIcons.bundle; sourceTree = "<group>"; };
 		BBB70FF917E3435C00A287D0 /* FilesIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FilesIcons.bundle; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 				BB1C4C9D17C83DE1008A6482 /* libxml2.dylib in Frameworks */,
 				BB143A4D1795098D0059C868 /* MobileCoreServices.framework in Frameworks */,
 				BB09B42B17AF8B0F00E08786 /* libz.dylib in Frameworks */,
-				BB0D92ED18434E3700F7506A /* CloudSDK.framework in Frameworks */,
+				BB97A6E81946B39C00C40BB7 /* CloudSDK.framework in Frameworks */,
 				BB04398917A61E1B00E7E3E4 /* CFNetwork.framework in Frameworks */,
 				BB143A51179509A40059C868 /* Security.framework in Frameworks */,
 				BBFC94D4179E1F20002C53A2 /* StoreKit.framework in Frameworks */,
@@ -301,7 +301,7 @@
 		BBDE853A17E6962400D1818B /* frameWork */ = {
 			isa = PBXGroup;
 			children = (
-				BB0D92EC18434E3700F7506A /* CloudSDK.framework */,
+				BB97A6E71946B39C00C40BB7 /* CloudSDK.framework */,
 			);
 			path = frameWork;
 			sourceTree = "<group>";
@@ -590,6 +590,7 @@
 					"\\\\\\\"$(SRCROOT)/CloudStorages/sdk/frameWork\\\\\\\"",
 					"$(SRCROOT)/CloudStorages/sdk/frameWork",
 					"$(SRCROOT)/CloudStorages/sdk/frameWork",
+					"$(PROJECT_DIR)/CloudStorages/sdk/frameWork",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudStorages/CloudStorages-Prefix.pch";
@@ -612,6 +613,7 @@
 					"\\\\\\\"$(SRCROOT)/CloudStorages/sdk/frameWork\\\\\\\"",
 					"$(SRCROOT)/CloudStorages/sdk/frameWork",
 					"$(SRCROOT)/CloudStorages/sdk/frameWork",
+					"$(PROJECT_DIR)/CloudStorages/sdk/frameWork",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudStorages/CloudStorages-Prefix.pch";

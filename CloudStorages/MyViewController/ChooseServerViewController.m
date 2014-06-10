@@ -206,13 +206,15 @@
     [self.navigationController popViewControllerAnimated:NO];
 }
 
-- (void)loginUserName:(NSString *)name andPassWord:(NSString *)passWord andHost:(NSString *)host andPort:(NSString *)port{
+- (void)loginUserName:(NSString *)name andPassWord:(NSString *)passWord andHost:(NSString *)host andPort:(NSString *)port encoding:(NSStringEncoding)encoding{
     _server.userName = name;
     _server.password = passWord;
     _server.hostName = host;
     _server.portID = port;
+    _server.encoding = encoding;
     [_server loginFromController:nil];
     
     
 }
+
 @end

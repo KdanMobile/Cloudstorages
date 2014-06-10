@@ -20,12 +20,12 @@ typedef enum {
 @class CSDownloadTask;
 @interface CSDownloadManager : NSObject
 {
-    NSMutableArray                  *_taskArray;//Array of download tasks
+    NSMutableArray                  *_taskArray;
 }
 
-@property (nonatomic,retain) NSMutableArray * taskArray;
+@property (nonatomic,retain) NSMutableArray * taskArray;//Array of download tasks
 + (CSDownloadManager *)sharedManager;
-/** 保存下载历史列表
+/** Save Downloaded List
  
  */
 - (void)saveDownloadTask;

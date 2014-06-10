@@ -10,7 +10,7 @@
 #import <CloudSDK/CSCloudServer.h>
 @protocol loginDelegate <NSObject>
 
-- (void)loginUserName:(NSString *)name andPassWord:(NSString *)passWord andHost:(NSString *)host andPort:(NSString *)port;
+- (void)loginUserName:(NSString *)name andPassWord:(NSString *)passWord andHost:(NSString *)host andPort:(NSString *)port encoding:(NSStringEncoding)encoding;
 
 @end
 
@@ -23,7 +23,9 @@
 @property (retain, nonatomic) IBOutlet UITextField *passWord;
 @property (retain, nonatomic) IBOutlet UITextField *hostName;
 @property (retain, nonatomic) IBOutlet UITextField *port;
+@property (retain, nonatomic) IBOutlet UIButton    *encodeButton;
+@property (retain, nonatomic) IBOutlet UILabel     *encodeLabel;
 @property (assign, nonatomic) CSCloudServerType type;
 - (IBAction)login:(id)sender;
-
+- (IBAction)onClickSelectEncoding:(id)sender;
 @end

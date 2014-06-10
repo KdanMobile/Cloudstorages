@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface CSPermission : NSObject{
-    NSString   *permissionName;  //Adminisrtator's name
-    NSString   *permissionRole;  //Role to this file.
-    id         permissionObject;//File permission object.
+    NSString   *permissionName;
+    NSString   *permissionRole;
+    id         permissionObject;
 }
 
-@property (nonatomic, copy) NSString  *permissionName;
-@property (nonatomic, copy) NSString  *permissionRole;
-@property (nonatomic, retain) id      permissionObject;
+@property (nonatomic, copy) NSString  *permissionName;//Adminisrtator's name
+@property (nonatomic, copy) NSString  *permissionRole;//Role to this file
+@property (nonatomic, retain) id      permissionObject;//File permission object
 
 @end
