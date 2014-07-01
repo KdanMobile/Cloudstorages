@@ -585,6 +585,7 @@
 		BBCB67281794D95600B7EE17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					../CloudStorages/CloudStorages/sdk/frameWork,
 					"\\\\\\\"$(SRCROOT)/CloudStorages/sdk/frameWork\\\\\\\"",
@@ -596,8 +597,9 @@
 				GCC_PREFIX_HEADER = "CloudStorages/CloudStorages-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "CloudStorages/CloudStorages-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -608,6 +610,7 @@
 		BBCB67291794D95600B7EE17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					../CloudStorages/CloudStorages/sdk/frameWork,
 					"\\\\\\\"$(SRCROOT)/CloudStorages/sdk/frameWork\\\\\\\"",
@@ -619,7 +622,7 @@
 				GCC_PREFIX_HEADER = "CloudStorages/CloudStorages-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "CloudStorages/CloudStorages-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
