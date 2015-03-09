@@ -23,8 +23,8 @@
 		BB2F1DFE180D0AC800A894AD /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2F1DF3180D0AC800A894AD /* TaskCell.m */; };
 		BB2F1DFF180D0AC800A894AD /* UpAndDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2F1DF5180D0AC800A894AD /* UpAndDownloadViewController.m */; };
 		BB2F1E00180D0AC800A894AD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2F1DF7180D0AC800A894AD /* WebViewController.m */; };
-		BB97A6E81946B39C00C40BB7 /* CloudSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB97A6E71946B39C00C40BB7 /* CloudSDK.framework */; };
 		BB9AC661179D3C9300F260F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9AC660179D3C9300F260F9 /* SystemConfiguration.framework */; };
+		BBB6E3831AAD6A2100118A22 /* CloudSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB6E3821AAD6A2100118A22 /* CloudSDK.framework */; };
 		BBB70FFA17E3435C00A287D0 /* CloudIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BBB70FF817E3435C00A287D0 /* CloudIcons.bundle */; };
 		BBB70FFB17E3435C00A287D0 /* FilesIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BBB70FF917E3435C00A287D0 /* FilesIcons.bundle */; };
 		BBCB670E1794D95600B7EE17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCB670D1794D95600B7EE17 /* UIKit.framework */; };
@@ -93,8 +93,8 @@
 		BB2F1DF5180D0AC800A894AD /* UpAndDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpAndDownloadViewController.m; sourceTree = "<group>"; };
 		BB2F1DF6180D0AC800A894AD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		BB2F1DF7180D0AC800A894AD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		BB97A6E71946B39C00C40BB7 /* CloudSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudSDK.framework; sourceTree = "<group>"; };
 		BB9AC660179D3C9300F260F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BBB6E3821AAD6A2100118A22 /* CloudSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudSDK.framework; sourceTree = "<group>"; };
 		BBB70FF817E3435C00A287D0 /* CloudIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CloudIcons.bundle; sourceTree = "<group>"; };
 		BBB70FF917E3435C00A287D0 /* FilesIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FilesIcons.bundle; sourceTree = "<group>"; };
 		BBCB670A1794D95600B7EE17 /* CloudStorages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudStorages.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,7 +177,7 @@
 				BB1C4C9D17C83DE1008A6482 /* libxml2.dylib in Frameworks */,
 				BB143A4D1795098D0059C868 /* MobileCoreServices.framework in Frameworks */,
 				BB09B42B17AF8B0F00E08786 /* libz.dylib in Frameworks */,
-				BB97A6E81946B39C00C40BB7 /* CloudSDK.framework in Frameworks */,
+				BBB6E3831AAD6A2100118A22 /* CloudSDK.framework in Frameworks */,
 				BB04398917A61E1B00E7E3E4 /* CFNetwork.framework in Frameworks */,
 				BB143A51179509A40059C868 /* Security.framework in Frameworks */,
 				BBFC94D4179E1F20002C53A2 /* StoreKit.framework in Frameworks */,
@@ -301,7 +301,7 @@
 		BBDE853A17E6962400D1818B /* frameWork */ = {
 			isa = PBXGroup;
 			children = (
-				BB97A6E71946B39C00C40BB7 /* CloudSDK.framework */,
+				BBB6E3821AAD6A2100118A22 /* CloudSDK.framework */,
 			);
 			path = frameWork;
 			sourceTree = "<group>";
@@ -585,7 +585,7 @@
 		BBCB67281794D95600B7EE17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					../CloudStorages/CloudStorages/sdk/frameWork,
 					"\\\\\\\"$(SRCROOT)/CloudStorages/sdk/frameWork\\\\\\\"",
@@ -610,7 +610,7 @@
 		BBCB67291794D95600B7EE17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					../CloudStorages/CloudStorages/sdk/frameWork,
 					"\\\\\\\"$(SRCROOT)/CloudStorages/sdk/frameWork\\\\\\\"",

@@ -3,7 +3,7 @@
 "CloudStorages SDK is a classlib for manageing all sorts of cloud data such as the following ten: Box、DropBox、GoogleDrive、GoogleDocs、FTP、MyDisk、WebDav、EverNote、SugarSync、skyDrive. 
 Current version:1.0"
 #Operating Environment
-- armv7 supported
+- armv7,arm64 supported
 - iOS 5.0 and above supported
  
 #File Import 

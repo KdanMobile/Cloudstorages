@@ -288,6 +288,8 @@ typedef enum CSCloudErorCode
  Only support Evernote and FTP
  */
 - (void)server:(CSCloudServer *)server downloadFile:(NSString *)fileName toPath:(NSString *)toPath  success:(BOOL)success;
+- (void)server:(CSCloudServer *)server downloadCloudFile:(CloudFile *)cloudFile toPath:(NSString *)toPath success:(BOOL)success;
+- (void)server:(CSCloudServer *)server downloadCloudFile:(CloudFile *)cloudFile process:(float)process;
 
 /**
  File deletion callback function.

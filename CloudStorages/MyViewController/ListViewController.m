@@ -406,6 +406,7 @@ else{
     [alt release];
 }
 - (void)serverDownloadFaile:(CSCloudServer *)server withError:(NSError *)error{
+    [_indicatorView stopAnimating];
     UITableViewCell *cell= [self.tableView cellForRowAtIndexPath:_indexPath];
     cell.detailTextLabel.text = nil;
     UIAlertView * alt  = [[UIAlertView alloc] initWithTitle:nil message:@"Download failed" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
