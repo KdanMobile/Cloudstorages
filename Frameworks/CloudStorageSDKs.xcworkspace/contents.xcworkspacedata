@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ENSDK/ENSDK.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OneDrive/OneDrive.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BoxSDK/BoxSDK.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:GoogleDrive/GoogleDrive.xcodeproj">
+   </FileRef>
+</Workspace>

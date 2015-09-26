@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2449184C1BA0611D007C59A1 /* BoxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449182F1BA0611D007C59A1 /* BoxSDK.framework */; };
+		2449184E1BA0611D007C59A1 /* ENSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244918351BA0611D007C59A1 /* ENSDK.framework */; };
+		2449184F1BA0611D007C59A1 /* ENSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 244918371BA0611D007C59A1 /* ENSDK-Info.plist */; };
+		244918501BA0611D007C59A1 /* ENSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 244918381BA0611D007C59A1 /* ENSDKResources.bundle */; };
+		244918521BA0611D007C59A1 /* DevTestTool-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2449183D1BA0611D007C59A1 /* DevTestTool-Info.plist */; };
+		244918531BA0611D007C59A1 /* GoogleDrive-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2449183E1BA0611D007C59A1 /* GoogleDrive-Info.plist */; };
+		244918541BA0611D007C59A1 /* GTLFramework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2449183F1BA0611D007C59A1 /* GTLFramework-Info.plist */; };
+		244918551BA0611D007C59A1 /* GTLUnitTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 244918401BA0611D007C59A1 /* GTLUnitTests-Info.plist */; };
+		244918561BA0611D007C59A1 /* GTMOAuth2Framework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 244918411BA0611D007C59A1 /* GTMOAuth2Framework-Info.plist */; };
+		244918571BA0611D007C59A1 /* GTMOAuth2ViewTouch.nib in Resources */ = {isa = PBXBuildFile; fileRef = 244918421BA0611D007C59A1 /* GTMOAuth2ViewTouch.nib */; };
+		244918581BA0611D007C59A1 /* GTMOAuth2Window.nib in Resources */ = {isa = PBXBuildFile; fileRef = 244918431BA0611D007C59A1 /* GTMOAuth2Window.nib */; };
+		244918591BA0611D007C59A1 /* GTMSessionFetcher-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 244918441BA0611D007C59A1 /* GTMSessionFetcher-Info.plist */; };
+		246B36061BA1362E00846B66 /* GoogleDrive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2449183B1BA0611D007C59A1 /* GoogleDrive.framework */; };
+		246B36071BA1368B00846B66 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244918321BA0611D007C59A1 /* DropboxSDK.framework */; };
+		246B36081BA136AA00846B66 /* OneDrive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244918471BA0611D007C59A1 /* OneDrive.framework */; };
+		246E27261B9EBFEC00622C32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E27251B9EBFEC00622C32 /* main.m */; };
+		246E27291B9EBFEC00622C32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E27281B9EBFEC00622C32 /* AppDelegate.m */; };
+		246E272C1B9EBFEC00622C32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E272B1B9EBFEC00622C32 /* ViewController.m */; };
+		246E272F1B9EBFEC00622C32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246E272D1B9EBFEC00622C32 /* Main.storyboard */; };
+		246E27311B9EBFEC00622C32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246E27301B9EBFEC00622C32 /* Images.xcassets */; };
+		246E27341B9EBFEC00622C32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246E27321B9EBFEC00622C32 /* LaunchScreen.xib */; };
+		246E27401B9EBFEC00622C32 /* CloudSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E273F1B9EBFEC00622C32 /* CloudSDKDemoTests.m */; };
+		246E274F1B9EC08400622C32 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246E274C1B9EC08400622C32 /* Default-568h@2x.png */; };
+		246E27501B9EC08400622C32 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 246E274D1B9EC08400622C32 /* Default.png */; };
+		246E27511B9EC08400622C32 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246E274E1B9EC08400622C32 /* Default@2x.png */; };
+		246E276F1B9EC11F00622C32 /* ChooseServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E27541B9EC11F00622C32 /* ChooseServerViewController.m */; };
+		246E27701B9EC11F00622C32 /* DownloadLIstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E27561B9EC11F00622C32 /* DownloadLIstViewController.m */; };
+		246E27711B9EC11F00622C32 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E27581B9EC11F00622C32 /* ListViewController.m */; };
+		246E27721B9EC11F00622C32 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E275A1B9EC11F00622C32 /* LoginViewController.m */; };
+		246E27731B9EC11F00622C32 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246E275B1B9EC11F00622C32 /* LoginViewController.xib */; };
+		246E27741B9EC11F00622C32 /* MyMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E275D1B9EC11F00622C32 /* MyMainViewController.m */; };
+		246E27751B9EC11F00622C32 /* PermissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E275F1B9EC11F00622C32 /* PermissionViewController.m */; };
+		246E27761B9EC11F00622C32 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E27611B9EC11F00622C32 /* TaskCell.m */; };
+		246E27771B9EC11F00622C32 /* UpAndDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E27631B9EC11F00622C32 /* UpAndDownloadViewController.m */; };
+		246E27781B9EC11F00622C32 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E27651B9EC11F00622C32 /* WebViewController.m */; };
+		246E27791B9EC11F00622C32 /* ActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E27691B9EC11F00622C32 /* ActivityView.m */; };
+		246E277A1B9EC11F00622C32 /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246E276A1B9EC11F00622C32 /* ActivityView.xib */; };
+		246E277B1B9EC11F00622C32 /* toast_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 246E276B1B9EC11F00622C32 /* toast_bg.png */; };
+		246E277C1B9EC11F00622C32 /* UIApplication+PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 246E276E1B9EC11F00622C32 /* UIApplication+PresentedViewController.m */; };
+		246E27811B9EC4A900622C32 /* CloudIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 246E277F1B9EC4A900622C32 /* CloudIcons.bundle */; };
+		246E27821B9EC4A900622C32 /* FilesIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 246E27801B9EC4A900622C32 /* FilesIcons.bundle */; };
+		24A0DC311B9ECBAE007CD178 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A0DC301B9ECBAE007CD178 /* libz.dylib */; };
+		24CFEA671BA033AB00D4230C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CFEA661BA033AB00D4230C /* CFNetwork.framework */; };
+		24CFEA691BA033B100D4230C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CFEA681BA033B100D4230C /* SystemConfiguration.framework */; };
+		24CFEA6B1BA033B700D4230C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CFEA6A1BA033B700D4230C /* UIKit.framework */; };
+		24CFEA6D1BA033BC00D4230C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CFEA6C1BA033BC00D4230C /* Foundation.framework */; };
+		24CFEA6F1BA033D300D4230C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CFEA6E1BA033D300D4230C /* libxml2.dylib */; };
+		24CFEA711BA033DC00D4230C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CFEA701BA033DC00D4230C /* MobileCoreServices.framework */; };
+		24CFEA731BA033E200D4230C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CFEA721BA033E200D4230C /* Security.framework */; };
+		24CFEA751BA033EA00D4230C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CFEA741BA033EA00D4230C /* QuartzCore.framework */; };
+		24CFEA771BA033F000D4230C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CFEA761BA033F000D4230C /* CoreGraphics.framework */; };
+		BB9E1FD51BA003B600CAC62C /* CloudSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9E1FD41BA003B600CAC62C /* CloudSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		246E273A1B9EBFEC00622C32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 246E27181B9EBFEC00622C32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 246E271F1B9EBFEC00622C32;
+			remoteInfo = CloudSDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2435D5C71B9EC58E00172CAB /* CloudSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CloudSDKDemo.entitlements; sourceTree = "<group>"; };
+		2449182F1BA0611D007C59A1 /* BoxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BoxSDK.framework; sourceTree = "<group>"; };
+		244918321BA0611D007C59A1 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		244918351BA0611D007C59A1 /* ENSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ENSDK.framework; sourceTree = "<group>"; };
+		244918371BA0611D007C59A1 /* ENSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ENSDK-Info.plist"; sourceTree = "<group>"; };
+		244918381BA0611D007C59A1 /* ENSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ENSDKResources.bundle; sourceTree = "<group>"; };
+		2449183B1BA0611D007C59A1 /* GoogleDrive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleDrive.framework; sourceTree = "<group>"; };
+		2449183D1BA0611D007C59A1 /* DevTestTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "DevTestTool-Info.plist"; sourceTree = "<group>"; };
+		2449183E1BA0611D007C59A1 /* GoogleDrive-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "GoogleDrive-Info.plist"; sourceTree = "<group>"; };
+		2449183F1BA0611D007C59A1 /* GTLFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "GTLFramework-Info.plist"; sourceTree = "<group>"; };
+		244918401BA0611D007C59A1 /* GTLUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "GTLUnitTests-Info.plist"; sourceTree = "<group>"; };
+		244918411BA0611D007C59A1 /* GTMOAuth2Framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "GTMOAuth2Framework-Info.plist"; sourceTree = "<group>"; };
+		244918421BA0611D007C59A1 /* GTMOAuth2ViewTouch.nib */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = GTMOAuth2ViewTouch.nib; sourceTree = "<group>"; };
+		244918431BA0611D007C59A1 /* GTMOAuth2Window.nib */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = GTMOAuth2Window.nib; sourceTree = "<group>"; };
+		244918441BA0611D007C59A1 /* GTMSessionFetcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "GTMSessionFetcher-Info.plist"; sourceTree = "<group>"; };
+		244918471BA0611D007C59A1 /* OneDrive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneDrive.framework; sourceTree = "<group>"; };
+		246E27201B9EBFEC00622C32 /* CloudSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		246E27241B9EBFEC00622C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246E27251B9EBFEC00622C32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		246E27271B9EBFEC00622C32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		246E27281B9EBFEC00622C32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		246E272A1B9EBFEC00622C32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		246E272B1B9EBFEC00622C32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		246E272E1B9EBFEC00622C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		246E27301B9EBFEC00622C32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		246E27331B9EBFEC00622C32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		246E27391B9EBFEC00622C32 /* CloudSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		246E273E1B9EBFEC00622C32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246E273F1B9EBFEC00622C32 /* CloudSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudSDKDemoTests.m; sourceTree = "<group>"; };
+		246E274C1B9EC08400622C32 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		246E274D1B9EC08400622C32 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		246E274E1B9EC08400622C32 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		246E27531B9EC11F00622C32 /* ChooseServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseServerViewController.h; sourceTree = "<group>"; };
+		246E27541B9EC11F00622C32 /* ChooseServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseServerViewController.m; sourceTree = "<group>"; };
+		246E27551B9EC11F00622C32 /* DownloadLIstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadLIstViewController.h; sourceTree = "<group>"; };
+		246E27561B9EC11F00622C32 /* DownloadLIstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadLIstViewController.m; sourceTree = "<group>"; };
+		246E27571B9EC11F00622C32 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		246E27581B9EC11F00622C32 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		246E27591B9EC11F00622C32 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		246E275A1B9EC11F00622C32 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		246E275B1B9EC11F00622C32 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		246E275C1B9EC11F00622C32 /* MyMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMainViewController.h; sourceTree = "<group>"; };
+		246E275D1B9EC11F00622C32 /* MyMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMainViewController.m; sourceTree = "<group>"; };
+		246E275E1B9EC11F00622C32 /* PermissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionViewController.h; sourceTree = "<group>"; };
+		246E275F1B9EC11F00622C32 /* PermissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionViewController.m; sourceTree = "<group>"; };
+		246E27601B9EC11F00622C32 /* TaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
+		246E27611B9EC11F00622C32 /* TaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
+		246E27621B9EC11F00622C32 /* UpAndDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpAndDownloadViewController.h; sourceTree = "<group>"; };
+		246E27631B9EC11F00622C32 /* UpAndDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpAndDownloadViewController.m; sourceTree = "<group>"; };
+		246E27641B9EC11F00622C32 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		246E27651B9EC11F00622C32 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		246E27681B9EC11F00622C32 /* ActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityView.h; sourceTree = "<group>"; };
+		246E27691B9EC11F00622C32 /* ActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityView.m; sourceTree = "<group>"; };
+		246E276A1B9EC11F00622C32 /* ActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityView.xib; sourceTree = "<group>"; };
+		246E276B1B9EC11F00622C32 /* toast_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toast_bg.png; sourceTree = "<group>"; };
+		246E276D1B9EC11F00622C32 /* UIApplication+PresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+PresentedViewController.h"; sourceTree = "<group>"; };
+		246E276E1B9EC11F00622C32 /* UIApplication+PresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+PresentedViewController.m"; sourceTree = "<group>"; };
+		246E277F1B9EC4A900622C32 /* CloudIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CloudIcons.bundle; sourceTree = "<group>"; };
+		246E27801B9EC4A900622C32 /* FilesIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FilesIcons.bundle; sourceTree = "<group>"; };
+		24A0DBCF1B9EC861007CD178 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		24A0DC301B9ECBAE007CD178 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		24CFEA661BA033AB00D4230C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		24CFEA681BA033B100D4230C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		24CFEA6A1BA033B700D4230C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		24CFEA6C1BA033BC00D4230C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24CFEA6E1BA033D300D4230C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		24CFEA701BA033DC00D4230C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		24CFEA721BA033E200D4230C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		24CFEA741BA033EA00D4230C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		24CFEA761BA033F000D4230C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BB9E1FD41BA003B600CAC62C /* CloudSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudSDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		246E271D1B9EBFEC00622C32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246B36071BA1368B00846B66 /* DropboxSDK.framework in Frameworks */,
+				24CFEA771BA033F000D4230C /* CoreGraphics.framework in Frameworks */,
+				24CFEA751BA033EA00D4230C /* QuartzCore.framework in Frameworks */,
+				24CFEA731BA033E200D4230C /* Security.framework in Frameworks */,
+				24CFEA711BA033DC00D4230C /* MobileCoreServices.framework in Frameworks */,
+				2449184E1BA0611D007C59A1 /* ENSDK.framework in Frameworks */,
+				24CFEA6F1BA033D300D4230C /* libxml2.dylib in Frameworks */,
+				24CFEA6D1BA033BC00D4230C /* Foundation.framework in Frameworks */,
+				24CFEA6B1BA033B700D4230C /* UIKit.framework in Frameworks */,
+				2449184C1BA0611D007C59A1 /* BoxSDK.framework in Frameworks */,
+				246B36081BA136AA00846B66 /* OneDrive.framework in Frameworks */,
+				246B36061BA1362E00846B66 /* GoogleDrive.framework in Frameworks */,
+				24CFEA691BA033B100D4230C /* SystemConfiguration.framework in Frameworks */,
+				24CFEA671BA033AB00D4230C /* CFNetwork.framework in Frameworks */,
+				24A0DC311B9ECBAE007CD178 /* libz.dylib in Frameworks */,
+				BB9E1FD51BA003B600CAC62C /* CloudSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246E27361B9EBFEC00622C32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2449182D1BA0611D007C59A1 /* BoxSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2449182E1BA0611D007C59A1 /* BoxSDK.embeddedframework */,
+			);
+			path = BoxSDK;
+			sourceTree = "<group>";
+		};
+		2449182E1BA0611D007C59A1 /* BoxSDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				2449182F1BA0611D007C59A1 /* BoxSDK.framework */,
+			);
+			path = BoxSDK.embeddedframework;
+			sourceTree = "<group>";
+		};
+		244918311BA0611D007C59A1 /* DropBox */ = {
+			isa = PBXGroup;
+			children = (
+				244918321BA0611D007C59A1 /* DropboxSDK.framework */,
+			);
+			path = DropBox;
+			sourceTree = "<group>";
+		};
+		244918331BA0611D007C59A1 /* EverNote */ = {
+			isa = PBXGroup;
+			children = (
+				244918341BA0611D007C59A1 /* ENSDK.embeddedframework */,
+			);
+			path = EverNote;
+			sourceTree = "<group>";
+		};
+		244918341BA0611D007C59A1 /* ENSDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				244918351BA0611D007C59A1 /* ENSDK.framework */,
+				244918361BA0611D007C59A1 /* Resources */,
+			);
+			path = ENSDK.embeddedframework;
+			sourceTree = "<group>";
+		};
+		244918361BA0611D007C59A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				244918371BA0611D007C59A1 /* ENSDK-Info.plist */,
+				244918381BA0611D007C59A1 /* ENSDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		244918391BA0611D007C59A1 /* GoogleDrive */ = {
+			isa = PBXGroup;
+			children = (
+				2449183A1BA0611D007C59A1 /* GoogleDrive.embeddedframework */,
+			);
+			path = GoogleDrive;
+			sourceTree = "<group>";
+		};
+		2449183A1BA0611D007C59A1 /* GoogleDrive.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				2449183B1BA0611D007C59A1 /* GoogleDrive.framework */,
+				2449183C1BA0611D007C59A1 /* Resources */,
+			);
+			path = GoogleDrive.embeddedframework;
+			sourceTree = "<group>";
+		};
+		2449183C1BA0611D007C59A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2449183D1BA0611D007C59A1 /* DevTestTool-Info.plist */,
+				2449183E1BA0611D007C59A1 /* GoogleDrive-Info.plist */,
+				2449183F1BA0611D007C59A1 /* GTLFramework-Info.plist */,
+				244918401BA0611D007C59A1 /* GTLUnitTests-Info.plist */,
+				244918411BA0611D007C59A1 /* GTMOAuth2Framework-Info.plist */,
+				244918421BA0611D007C59A1 /* GTMOAuth2ViewTouch.nib */,
+				244918431BA0611D007C59A1 /* GTMOAuth2Window.nib */,
+				244918441BA0611D007C59A1 /* GTMSessionFetcher-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		244918451BA0611D007C59A1 /* OneDrive */ = {
+			isa = PBXGroup;
+			children = (
+				244918461BA0611D007C59A1 /* OneDrive.embeddedframework */,
+			);
+			path = OneDrive;
+			sourceTree = "<group>";
+		};
+		244918461BA0611D007C59A1 /* OneDrive.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				244918471BA0611D007C59A1 /* OneDrive.framework */,
+			);
+			path = OneDrive.embeddedframework;
+			sourceTree = "<group>";
+		};
+		246E27171B9EBFEC00622C32 = {
+			isa = PBXGroup;
+			children = (
+				24CFEA761BA033F000D4230C /* CoreGraphics.framework */,
+				24CFEA741BA033EA00D4230C /* QuartzCore.framework */,
+				24CFEA721BA033E200D4230C /* Security.framework */,
+				24CFEA701BA033DC00D4230C /* MobileCoreServices.framework */,
+				24CFEA6E1BA033D300D4230C /* libxml2.dylib */,
+				24CFEA6C1BA033BC00D4230C /* Foundation.framework */,
+				24CFEA6A1BA033B700D4230C /* UIKit.framework */,
+				24CFEA681BA033B100D4230C /* SystemConfiguration.framework */,
+				24CFEA661BA033AB00D4230C /* CFNetwork.framework */,
+				BB9E1FD41BA003B600CAC62C /* CloudSDK.framework */,
+				24A0DC301B9ECBAE007CD178 /* libz.dylib */,
+				24A0DBD51B9ECB1A007CD178 /* API */,
+				246E274B1B9EC08400622C32 /* Images */,
+				246E27221B9EBFEC00622C32 /* CloudSDKDemo */,
+				246E273C1B9EBFEC00622C32 /* CloudSDKDemoTests */,
+				246E27211B9EBFEC00622C32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		246E27211B9EBFEC00622C32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				246E27201B9EBFEC00622C32 /* CloudSDKDemo.app */,
+				246E27391B9EBFEC00622C32 /* CloudSDKDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		246E27221B9EBFEC00622C32 /* CloudSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2435D5C71B9EC58E00172CAB /* CloudSDKDemo.entitlements */,
+				246E27521B9EC11F00622C32 /* MyViewController */,
+				246E27661B9EC11F00622C32 /* Tools */,
+				246E27271B9EBFEC00622C32 /* AppDelegate.h */,
+				246E27281B9EBFEC00622C32 /* AppDelegate.m */,
+				246E272A1B9EBFEC00622C32 /* ViewController.h */,
+				246E272B1B9EBFEC00622C32 /* ViewController.m */,
+				246E272D1B9EBFEC00622C32 /* Main.storyboard */,
+				246E27301B9EBFEC00622C32 /* Images.xcassets */,
+				246E27321B9EBFEC00622C32 /* LaunchScreen.xib */,
+				246E27231B9EBFEC00622C32 /* Supporting Files */,
+			);
+			path = CloudSDKDemo;
+			sourceTree = "<group>";
+		};
+		246E27231B9EBFEC00622C32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				246E27241B9EBFEC00622C32 /* Info.plist */,
+				246E27251B9EBFEC00622C32 /* main.m */,
+				24A0DBCF1B9EC861007CD178 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		246E273C1B9EBFEC00622C32 /* CloudSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				246E273F1B9EBFEC00622C32 /* CloudSDKDemoTests.m */,
+				246E273D1B9EBFEC00622C32 /* Supporting Files */,
+			);
+			path = CloudSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		246E273D1B9EBFEC00622C32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				246E273E1B9EBFEC00622C32 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		246E274B1B9EC08400622C32 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				246E277F1B9EC4A900622C32 /* CloudIcons.bundle */,
+				246E27801B9EC4A900622C32 /* FilesIcons.bundle */,
+				246E274C1B9EC08400622C32 /* Default-568h@2x.png */,
+				246E274D1B9EC08400622C32 /* Default.png */,
+				246E274E1B9EC08400622C32 /* Default@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		246E27521B9EC11F00622C32 /* MyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				246E27531B9EC11F00622C32 /* ChooseServerViewController.h */,
+				246E27541B9EC11F00622C32 /* ChooseServerViewController.m */,
+				246E27551B9EC11F00622C32 /* DownloadLIstViewController.h */,
+				246E27561B9EC11F00622C32 /* DownloadLIstViewController.m */,
+				246E27571B9EC11F00622C32 /* ListViewController.h */,
+				246E27581B9EC11F00622C32 /* ListViewController.m */,
+				246E27591B9EC11F00622C32 /* LoginViewController.h */,
+				246E275A1B9EC11F00622C32 /* LoginViewController.m */,
+				246E275B1B9EC11F00622C32 /* LoginViewController.xib */,
+				246E275C1B9EC11F00622C32 /* MyMainViewController.h */,
+				246E275D1B9EC11F00622C32 /* MyMainViewController.m */,
+				246E275E1B9EC11F00622C32 /* PermissionViewController.h */,
+				246E275F1B9EC11F00622C32 /* PermissionViewController.m */,
+				246E27601B9EC11F00622C32 /* TaskCell.h */,
+				246E27611B9EC11F00622C32 /* TaskCell.m */,
+				246E27621B9EC11F00622C32 /* UpAndDownloadViewController.h */,
+				246E27631B9EC11F00622C32 /* UpAndDownloadViewController.m */,
+				246E27641B9EC11F00622C32 /* WebViewController.h */,
+				246E27651B9EC11F00622C32 /* WebViewController.m */,
+			);
+			path = MyViewController;
+			sourceTree = "<group>";
+		};
+		246E27661B9EC11F00622C32 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				246E27671B9EC11F00622C32 /* ActivityView */,
+				246E276C1B9EC11F00622C32 /* UIApplication+PresentedViewController */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		246E27671B9EC11F00622C32 /* ActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				246E27681B9EC11F00622C32 /* ActivityView.h */,
+				246E27691B9EC11F00622C32 /* ActivityView.m */,
+				246E276A1B9EC11F00622C32 /* ActivityView.xib */,
+				246E276B1B9EC11F00622C32 /* toast_bg.png */,
+			);
+			path = ActivityView;
+			sourceTree = "<group>";
+		};
+		246E276C1B9EC11F00622C32 /* UIApplication+PresentedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				246E276D1B9EC11F00622C32 /* UIApplication+PresentedViewController.h */,
+				246E276E1B9EC11F00622C32 /* UIApplication+PresentedViewController.m */,
+			);
+			path = "UIApplication+PresentedViewController";
+			sourceTree = "<group>";
+		};
+		24A0DBD51B9ECB1A007CD178 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2449182D1BA0611D007C59A1 /* BoxSDK */,
+				244918311BA0611D007C59A1 /* DropBox */,
+				244918331BA0611D007C59A1 /* EverNote */,
+				244918391BA0611D007C59A1 /* GoogleDrive */,
+				244918451BA0611D007C59A1 /* OneDrive */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		246E271F1B9EBFEC00622C32 /* CloudSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246E27431B9EBFEC00622C32 /* Build configuration list for PBXNativeTarget "CloudSDKDemo" */;
+			buildPhases = (
+				246E271C1B9EBFEC00622C32 /* Sources */,
+				246E271D1B9EBFEC00622C32 /* Frameworks */,
+				246E271E1B9EBFEC00622C32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudSDKDemo;
+			productName = CloudSDKDemo;
+			productReference = 246E27201B9EBFEC00622C32 /* CloudSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		246E27381B9EBFEC00622C32 /* CloudSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246E27461B9EBFEC00622C32 /* Build configuration list for PBXNativeTarget "CloudSDKDemoTests" */;
+			buildPhases = (
+				246E27351B9EBFEC00622C32 /* Sources */,
+				246E27361B9EBFEC00622C32 /* Frameworks */,
+				246E27371B9EBFEC00622C32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				246E273B1B9EBFEC00622C32 /* PBXTargetDependency */,
+			);
+			name = CloudSDKDemoTests;
+			productName = CloudSDKDemoTests;
+			productReference = 246E27391B9EBFEC00622C32 /* CloudSDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		246E27181B9EBFEC00622C32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Kdan Mobile";
+				TargetAttributes = {
+					246E271F1B9EBFEC00622C32 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = H9W9RZS6TM;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+					246E27381B9EBFEC00622C32 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 246E271F1B9EBFEC00622C32;
+					};
+				};
+			};
+			buildConfigurationList = 246E271B1B9EBFEC00622C32 /* Build configuration list for PBXProject "CloudSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 246E27171B9EBFEC00622C32;
+			productRefGroup = 246E27211B9EBFEC00622C32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				246E271F1B9EBFEC00622C32 /* CloudSDKDemo */,
+				246E27381B9EBFEC00622C32 /* CloudSDKDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		246E271E1B9EBFEC00622C32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2449184F1BA0611D007C59A1 /* ENSDK-Info.plist in Resources */,
+				246E27811B9EC4A900622C32 /* CloudIcons.bundle in Resources */,
+				244918521BA0611D007C59A1 /* DevTestTool-Info.plist in Resources */,
+				244918501BA0611D007C59A1 /* ENSDKResources.bundle in Resources */,
+				244918591BA0611D007C59A1 /* GTMSessionFetcher-Info.plist in Resources */,
+				246E27821B9EC4A900622C32 /* FilesIcons.bundle in Resources */,
+				244918561BA0611D007C59A1 /* GTMOAuth2Framework-Info.plist in Resources */,
+				246E277B1B9EC11F00622C32 /* toast_bg.png in Resources */,
+				246E27511B9EC08400622C32 /* Default@2x.png in Resources */,
+				246E277A1B9EC11F00622C32 /* ActivityView.xib in Resources */,
+				244918581BA0611D007C59A1 /* GTMOAuth2Window.nib in Resources */,
+				246E272F1B9EBFEC00622C32 /* Main.storyboard in Resources */,
+				246E274F1B9EC08400622C32 /* Default-568h@2x.png in Resources */,
+				246E27341B9EBFEC00622C32 /* LaunchScreen.xib in Resources */,
+				246E27311B9EBFEC00622C32 /* Images.xcassets in Resources */,
+				246E27731B9EC11F00622C32 /* LoginViewController.xib in Resources */,
+				244918531BA0611D007C59A1 /* GoogleDrive-Info.plist in Resources */,
+				246E27501B9EC08400622C32 /* Default.png in Resources */,
+				244918541BA0611D007C59A1 /* GTLFramework-Info.plist in Resources */,
+				244918551BA0611D007C59A1 /* GTLUnitTests-Info.plist in Resources */,
+				244918571BA0611D007C59A1 /* GTMOAuth2ViewTouch.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246E27371B9EBFEC00622C32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		246E271C1B9EBFEC00622C32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246E272C1B9EBFEC00622C32 /* ViewController.m in Sources */,
+				246E27291B9EBFEC00622C32 /* AppDelegate.m in Sources */,
+				246E27791B9EC11F00622C32 /* ActivityView.m in Sources */,
+				246E27771B9EC11F00622C32 /* UpAndDownloadViewController.m in Sources */,
+				246E27761B9EC11F00622C32 /* TaskCell.m in Sources */,
+				246E27711B9EC11F00622C32 /* ListViewController.m in Sources */,
+				246E277C1B9EC11F00622C32 /* UIApplication+PresentedViewController.m in Sources */,
+				246E27741B9EC11F00622C32 /* MyMainViewController.m in Sources */,
+				246E276F1B9EC11F00622C32 /* ChooseServerViewController.m in Sources */,
+				246E27781B9EC11F00622C32 /* WebViewController.m in Sources */,
+				246E27721B9EC11F00622C32 /* LoginViewController.m in Sources */,
+				246E27701B9EC11F00622C32 /* DownloadLIstViewController.m in Sources */,
+				246E27751B9EC11F00622C32 /* PermissionViewController.m in Sources */,
+				246E27261B9EBFEC00622C32 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246E27351B9EBFEC00622C32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246E27401B9EBFEC00622C32 /* CloudSDKDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		246E273B1B9EBFEC00622C32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 246E271F1B9EBFEC00622C32 /* CloudSDKDemo */;
+			targetProxy = 246E273A1B9EBFEC00622C32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		246E272D1B9EBFEC00622C32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246E272E1B9EBFEC00622C32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		246E27321B9EBFEC00622C32 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246E27331B9EBFEC00622C32 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		246E27411B9EBFEC00622C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		246E27421B9EBFEC00622C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		246E27441B9EBFEC00622C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/API/BoxSDK",
+					"$(PROJECT_DIR)/API/DropBox",
+					"$(PROJECT_DIR)/API/EverNote",
+					"$(PROJECT_DIR)/API/GoogleDrive",
+					"$(PROJECT_DIR)/API/OneDrive",
+					"$(PROJECT_DIR)/API/BoxSDK/BoxSDK.embeddedframework",
+					"$(PROJECT_DIR)/API/EverNote/ENSDK.embeddedframework",
+					"$(PROJECT_DIR)/API/OneDrive/OneDrive.embeddedframework",
+					"$(PROJECT_DIR)/API/GoogleDrive/GoogleDrive.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CloudSDKDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = CloudSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		246E27451B9EBFEC00622C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/API/BoxSDK",
+					"$(PROJECT_DIR)/API/DropBox",
+					"$(PROJECT_DIR)/API/EverNote",
+					"$(PROJECT_DIR)/API/GoogleDrive",
+					"$(PROJECT_DIR)/API/OneDrive",
+					"$(PROJECT_DIR)/API/BoxSDK/BoxSDK.embeddedframework",
+					"$(PROJECT_DIR)/API/EverNote/ENSDK.embeddedframework",
+					"$(PROJECT_DIR)/API/OneDrive/OneDrive.embeddedframework",
+					"$(PROJECT_DIR)/API/GoogleDrive/GoogleDrive.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CloudSDKDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = CloudSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		246E27471B9EBFEC00622C32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CloudSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudSDKDemo.app/CloudSDKDemo";
+			};
+			name = Debug;
+		};
+		246E27481B9EBFEC00622C32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CloudSDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudSDKDemo.app/CloudSDKDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		246E271B1B9EBFEC00622C32 /* Build configuration list for PBXProject "CloudSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246E27411B9EBFEC00622C32 /* Debug */,
+				246E27421B9EBFEC00622C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246E27431B9EBFEC00622C32 /* Build configuration list for PBXNativeTarget "CloudSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246E27441B9EBFEC00622C32 /* Debug */,
+				246E27451B9EBFEC00622C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246E27461B9EBFEC00622C32 /* Build configuration list for PBXNativeTarget "CloudSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246E27471B9EBFEC00622C32 /* Debug */,
+				246E27481B9EBFEC00622C32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 246E27181B9EBFEC00622C32 /* Project object */;
+}

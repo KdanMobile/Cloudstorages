@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  CloudSDKDemo
+//
+//  Created by dongyongzhu on 15/9/8.
+//  Copyright (c) 2015年 Kdan Mobile. All rights reserved.
+//
+
+#ifndef CloudSDKDemo_PrefixHeader_pch
+#define CloudSDKDemo_PrefixHeader_pch
+
+#import <CloudSDK/CloudSDK.h>
+
+#endif

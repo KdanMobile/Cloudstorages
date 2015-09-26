@@ -1,0 +1,9 @@
+
+#ifndef BoxSDK_PrefixHeader_pch
+#define BoxSDK_PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "NSDate+BOXAdditions.h"
+
+#endif
