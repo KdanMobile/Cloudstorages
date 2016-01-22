@@ -1,7 +1,7 @@
 #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KCloud SDK 集成指南
 
 ##一、创建Project
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;详情，请[点击](http://blog.csdn.net/lutaotony/article/details/7998364).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;详情，请[点击](http://www.cnblogs.com/CocoonJin/p/5151065.html).
 
 ##二、导入KCloud.framework
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将KCloud.framework拖入到`Step 1` 创建的Project中，如下图
