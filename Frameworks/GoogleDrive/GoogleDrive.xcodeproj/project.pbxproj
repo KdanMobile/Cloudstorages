@@ -15,7 +15,6 @@
 		24D589121BA040CE002FCA28 /* GTMOAuth2SignIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D5881E1BA040CD002FCA28 /* GTMOAuth2SignIn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24D589131BA040CE002FCA28 /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D5881F1BA040CD002FCA28 /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		24D589141BA040CE002FCA28 /* GTMOAuth2Framework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24D588211BA040CD002FCA28 /* GTMOAuth2Framework-Info.plist */; };
-		24D589151BA040CE002FCA28 /* GTMOAuth2Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D588221BA040CD002FCA28 /* GTMOAuth2Window.xib */; };
 		24D589161BA040CE002FCA28 /* GTMOAuth2WindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D588231BA040CD002FCA28 /* GTMOAuth2WindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24D589171BA040CE002FCA28 /* GTMOAuth2WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D588241BA040CD002FCA28 /* GTMOAuth2WindowController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		24D589191BA040CE002FCA28 /* GTMOAuth2ViewControllerTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D588271BA040CD002FCA28 /* GTMOAuth2ViewControllerTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -347,8 +346,8 @@
 				24D5881C1BA040CD002FCA28 /* GTMOAuth2Authentication.h */,
 				24D5881D1BA040CD002FCA28 /* GTMOAuth2Authentication.m */,
 				24D5881E1BA040CD002FCA28 /* GTMOAuth2SignIn.h */,
-				24D5881F1BA040CD002FCA28 /* GTMOAuth2SignIn.m */,
 				24D588201BA040CD002FCA28 /* Mac */,
+				24D5881F1BA040CD002FCA28 /* GTMOAuth2SignIn.m */,
 				24D588251BA040CD002FCA28 /* ReleaseNotes.txt */,
 				24D588261BA040CD002FCA28 /* Touch */,
 			);
@@ -691,7 +690,6 @@
 				24D5892F1BA040CE002FCA28 /* DevTestTool-Info.plist in Resources */,
 				24D5899F1BA040CF002FCA28 /* GTMSessionFetcher-Info.plist in Resources */,
 				24D587E41BA040AF002FCA28 /* GoogleDrive-Info.plist in Resources */,
-				24D589151BA040CE002FCA28 /* GTMOAuth2Window.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,7 +844,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
@@ -881,7 +879,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";

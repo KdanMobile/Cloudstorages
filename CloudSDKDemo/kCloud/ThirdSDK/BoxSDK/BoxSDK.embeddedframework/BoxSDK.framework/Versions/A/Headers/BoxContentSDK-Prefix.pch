@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'BoxContentSDK' target in the 'BoxContentSDK' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import "NSDate+BOXAdditions.h"
+#endif

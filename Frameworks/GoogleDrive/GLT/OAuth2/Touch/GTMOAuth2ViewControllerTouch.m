@@ -381,8 +381,13 @@ static GTMOAuth2Keychain* gGTMOAuth2DefaultKeychain = nil;
 }
 
 - (void)setUpNavigation {
-  rightBarButtonItem_.customView = navButtonsView_;
-  self.navigationItem.rightBarButtonItem = rightBarButtonItem_;
+    rightBarButtonItem_.customView = navButtonsView_;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelAction:)];
+}
+
+- (void)cancelAction:(id)sender
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)popView {

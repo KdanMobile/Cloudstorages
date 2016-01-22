@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3B4C97D087FBE6211E7649D31110829DA390AE9E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "769DBC0DF627F7E8BE9DC1DE5CD02B9B2FD77EEE" : 0,
+    "3B4C97D087FBE6211E7649D31110829DA390AE9E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8B7E719A-9B50-4EBE-8CD3-7DFACF53C89E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "769DBC0DF627F7E8BE9DC1DE5CD02B9B2FD77EEE" : "%E4%BA%91%E7%AB%AF",
+    "3B4C97D087FBE6211E7649D31110829DA390AE9E" : "ClouldStorage_GitHub\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CloudSDKDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CloudSDKDemo\/CloudSDKDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:KdanMobile\/Cloudstorages.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3B4C97D087FBE6211E7649D31110829DA390AE9E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/git.kdan.cc\/cloudstorage_source.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "769DBC0DF627F7E8BE9DC1DE5CD02B9B2FD77EEE"
+    }
+  ]
+}
